@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
 function connect() {
   // 创建连接，传入配置信息
   return mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
+    host: constant.dbHost,
+    user: constant.dbUser,
     // 密码需要字符串形式传入
-    password: '159357',
+    password: constant.dbPwd,
     // 数据库名称
     database: 'book'
   })
