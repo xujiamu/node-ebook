@@ -23,8 +23,8 @@ if (env === 'dev') {
   resUrl = 'http://123.57.33.170'
   // 线上服务器mp3目录
   mp3FilePath = '/root/nginx/upload/mp3'
-  // 不需要加协议名
-  dbHost = '123.57.33.170/'
+  // 不需要加协议名，最后也不能加 / !!!!!!!!!!
+  dbHost = '123.57.33.170'
   dbUser = 'root'
   dbPwd = 'Qsc56789!'
 }
